@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crud_app"
+version = "0.1.0"
+authors = [
+    {name = "Stalegaard", email="f.carbonero.n@gmail.com"}
+]
+description = "A simple crud app"
+readme = "readme.md"
+
+requires-python = "=3.11"
+classifiers = []
+
+dependencies = [
+    "pymongo = *",
+    "typer["all"]= *"
+]
+
+[project.urls]
+
+
+[project.optional-dependencies]
+
+dev = [
+    "pytest",
+    "black",
+    "ruff"
+]
